@@ -1,7 +1,7 @@
 const Student = require("../Student.model");
 
 const studentControlles = {
-  createStudent: async (req, res) => {
+  postStudent: async (req, res) => {
     try {
       const student = await Student.create({
         name: req.body.name,
